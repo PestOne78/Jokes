@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.JokesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_of_jokes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:layout_marginBottom="60dp"
+        android:id="@+id/input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:ignore="Autofill,LabelFor,ContentDescription">
+
+        <ImageButton
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_minus" />
+
+        <EditText
+            android:id="@+id/count_joke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/btn_minus"
+            android:ems="5"
+            android:inputType="numberSigned"
+            android:textAlignment="center" />
+
+
+        <ImageButton
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/count_joke"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_plus" />
+
+        <Button
+            android:id="@+id/btn_getjoke"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/btn_plus"
+            android:background="@drawable/chuck_norris"
+            android:text="@string/title_joke" />
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignStart="@id/btn_getjoke"
+            android:background="@drawable/circle_button" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

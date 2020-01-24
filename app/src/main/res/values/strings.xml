@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Jokes</string>
+    <string name="title_joke">Jokes</string>>
+    <string name="title_web">Web</string>
+    <string name="exit_app">Do you want to close the application?</string>
+    <string name="title_exit">Exit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
